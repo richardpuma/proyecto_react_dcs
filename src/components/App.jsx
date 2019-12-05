@@ -8,9 +8,11 @@ import Login from './Pages/Login';
 import Public from './Routes/Public'
 import Register from './Pages/Register'
 import Page404 from './Pages/Page404'
+import Header from './Organisms/Header';
 
 const App=()=>(
   <Router>
+    <Header />
     <Switch>
       <Protected path="/" exact component={Home} />      
       <Protected path="/products" exact component={Products} />
